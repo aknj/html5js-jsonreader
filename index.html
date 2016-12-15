@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>HTML5 File API, JS: JSON Reader</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div id="content-wrapper">
+
+		<h1>JSON reader</h1>
+		<section>
+			<label for="fileInput">Wybierz plik:</label>
+			<input type="file" id="fileInput">
+      <p>Podgląd pliku:</p>
+		  <pre id="fileDisplayArea"></pre>
+      <form>
+        <label for="mode">Wyświetl: </label>
+        <input type="radio" name="mode" value="2">pierwsze 10 elementów
+        <input type="radio" name="mode" value="3">liczbę elementów zapisanych w pliku
+        <input type="radio" name="mode" value="4">elementy których id jest większe niż podane, wyniki posortowane po id
+      </form>
+    </section>
+    <section id="results">
+
+    </section>
+
+	</div>
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>
