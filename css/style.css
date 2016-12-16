@@ -90,3 +90,7 @@ fieldset input[type=number] {
   letter-spacing: .7px;
   color: #fff;
 }
+
+#results {
+  min-height: 10px;
+}
