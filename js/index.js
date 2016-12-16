@@ -22,6 +22,35 @@ window.onload = function() {
   var submitButton = document.getElementById('submitButton');
 
   submitButton.addEventListener('click', e => {
-    console.log('button clicked!');
-  })
+    var resultsSection = document.getElementById('results');
+
+    var mode = document.querySelector('input[name=mode]:checked').value;
+
+    // if (mode === "2") {
+    //   zadanie2();
+    // } else if (mode === "3") {
+    //   zadanie3();
+    // } else if (mode === "4") {
+    //   var minId = document.getElementById('minId').value;
+    //   // TO DO: checking if value is numerical? is this needed?
+    //   zadanie4(minId);
+    // }
+
+    function makeFunc() {
+      var minId = document.getElementById('minId').value;
+      function executeJob() {
+        console.log('tajne tajne', mode, minId);
+      }
+      return executeJob;
+    }
+
+    var myFunc = makeFunc();
+    myFunc();
+  });
+
+
 }
+
+// function zadanie2() {
+//
+// }

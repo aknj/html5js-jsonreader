@@ -69,14 +69,9 @@ fieldset > p {
   margin: 5px 0;
 }
 
-.col {
-  display: inline-block;
-}
-.col-2 {
-  width: 16.667%;
-}
-.col-10 {
-  width: 82.333%;
+fieldset input[type=number] {
+  width: 2.5em;
+  text-align: right;
 }
 
 /* TO DO: style buttons */
