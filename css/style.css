@@ -9,8 +9,8 @@ p {
   font-size: 0.8em;
 }
 
-label {
-  font-size: 0.8em;
+label[name=mode] {
+  font-size: 0.9em;
 }
 
 #content-wrapper {
@@ -31,14 +31,67 @@ img {
   max-width: 100%;
 }
 
+#fileInputArea {
+  padding: 0 2px;
+}
+
+#preview {
+  padding: 2px;
+}
+
 #fileDisplayArea {
-  margin-top: 0em;
-  margin-bottom: 2em;
-  width: 100%;
+  margin: 0 4px 5px 0px;
+  padding: 5px;
   overflow-x: auto;
+  width: 100%;
+  resize: vertical;
   height: 12em;
+  -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+          border-radius: 5px;
+  border: 1.2px solid #87a185;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  white-space: pre;
+}
+fieldset {
   border-radius: 5px;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
-  border: 1px solid #87a185;
+  border: 1.2px solid #87a185;
+  padding-bottom: 7px;
+}
+fieldset > p:first-of-type {
+  margin: 1px 0 0 0;
+}
+fieldset > p {
+  margin: 5px 0;
+}
+
+.col {
+  display: inline-block;
+}
+.col-2 {
+  width: 16.667%;
+}
+.col-10 {
+  width: 82.333%;
+}
+
+/* TO DO: style buttons */
+
+#submitButton {
+  width: 24%;
+  height: 2.4em;
+  display: block;
+  margin: 1.8em auto 0;
+  background-color: #4dad57;
+  border: 1.2px solid #399943;
+  -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+          border-radius: 5px;
+  font-size: .95em;
+  letter-spacing: .7px;
+  color: #fff;
 }
