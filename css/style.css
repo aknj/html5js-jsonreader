@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100);
+
 html {
   font-family: Helvetica, Arial, sans-serif;
   font-size: 100%;
@@ -9,7 +11,7 @@ p {
   font-size: 0.8em;
 }
 
-label[name=mode] {
+label.mode {
   font-size: 0.9em;
 }
 
@@ -97,9 +99,6 @@ fieldset input[type=number] {
   min-height: 10px;
 }
 
-
-@import url(http://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100);
-
 /*** Table Styles **/
 
 .table-fill {
@@ -142,7 +141,7 @@ tr {
   color: #475044;
   font-size: 16px;
   font-weight: normal;
-  text-shadow: 0 1px 1px rgba(256, 256, 256, 0.1);
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.1);
 }
 
 tr:first-child {
