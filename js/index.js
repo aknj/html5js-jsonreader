@@ -1,32 +1,34 @@
-document.addEventListener("DOMContentLoaded", function(event) {
-  var fileInput = document.getElementById('fileInput');
-  var fileDisplayArea = document.getElementById('fileDisplayArea');
-  var submitButton = document.getElementById('submitButton');
-  var resultsSection = document.getElementById('results');
+/* global buildHtmlTable */
+
+document.addEventListener('DOMContentLoaded', function(event) {
+  let fileInput = document.getElementById('fileInput');
+  let fileDisplayArea = document.getElementById('fileDisplayArea');
+  let submitButton = document.getElementById('submitButton');
+  let resultsSection = document.getElementById('results');
 
   function readFile(file, fn) {
-    var reader = new FileReader();
+    let reader = new FileReader();
     reader.onload = function(e) {
       fn(reader.result);
     };
     reader.readAsText(file);
   }
 
-  var clear = function() {
+  function clear() {
     while (resultsSection.hasChildNodes()) {
       resultsSection.removeChild(resultsSection.lastChild, false);
     }
-  };
+  }
 
-  var displayTableElem = function(json) {
-    var tableElem = buildHtmlTable(json);
+  function displayTableElem(json) {
+    let tableElem = buildHtmlTable(json);
     resultsSection.firstChild ?
       resultsSection.firstChild.replaceWith(tableElem) :
       resultsSection.appendChild(tableElem);
   }
 
-  var displayValue = value => {
-    var pElem = document.createElement('p');
+  function displayValue(value) {
+    let pElem = document.createElement('p');
     pElem.append(document.createTextNode(value));
     resultsSection.appendChild(pElem);
   }
@@ -36,47 +38,49 @@ document.addEventListener("DOMContentLoaded", function(event) {
    */
   fileInput.addEventListener('change', e => {
     clear();
-    var uploadedFile = fileInput.files[0];
-    readFile(uploadedFile, function(dataAsText) {
+    let uploadedFile = fileInput.files[0];
+    readFile(uploadedFile, dataAsText => {
       fileDisplayArea.value = dataAsText;
       /**
        * click event on the submitButton element
        */
       submitButton.addEventListener('click', e => {
-        var mode = document.querySelector('input[name=mode]:checked').value;
+        let mode = document.querySelector('input[name=mode]:checked').value;
         clear();
 
-        var data = JSON.parse(dataAsText);
-        var results = [];
+        let data = JSON.parse(dataAsText);
+        let results = [];
 
-        if (mode === "2") {
-          for (var i = 0; i < 10; i++) { results.push(data[i]); }
+        if (mode === '2') {
+          for (let i = 0; i < 10; i++) { results.push(data[i]); }
           displayTableElem(results);
 
-        } else if (mode === "3") {
+        } else if (mode === '3') {
           displayValue(data.length);
 
-        } else if (mode === "4") {
-          var minId = document.getElementsByName('minId')[0].value;
-          for (item of data) {
+        } else if (mode === '4') {
+          let minId = document.getElementsByName('minId')[0].value;
+          for (let item of data) {
             if (item.id > minId) {
               results.push(item);
             }
-            results.sort(function(a, b) { return a.id - b.id });
+            results.sort( (a, b) => a.id - b.id );
           }
           displayTableElem(results);
 
-        } else if (mode === "6") {
-          var names = [];
-          for (obj of data) {
+        } else if (mode === '6') {
+          let names = [];
+          for (let obj of data) {
             names.push(obj.name);
           }
-          var results = [...new Set(names)].map(function(x) {
-            var obj = {};
+          let results = [...new Set(names)].map(x => {
+            let obj = {};
             obj['name'] = x;
             obj['number of occurrences'] = names.filter(y => y === x).length;
             return obj;
           });
+          results.sort( (b, a) =>
+            a['number of occurrences'] - b['number of occurrences'] );
           displayTableElem(results);
 
         }

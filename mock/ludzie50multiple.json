@@ -1,0 +1,402 @@
+[
+  {
+    "id": 1,
+    "name": "Paweł",
+    "surname": "Benton",
+    "age": 20,
+    "city": "Kraemer",
+    "parent_id": 1
+  },
+  {
+    "id": 2,
+    "name": "Charity",
+    "surname": "Morin",
+    "age": 42,
+    "city": "Coyote",
+    "parent_id": 12
+  },
+  {
+    "id": 3,
+    "name": "Paweł",
+    "surname": "Lynn",
+    "age": 45,
+    "city": "Edinburg",
+    "parent_id": 49
+  },
+  {
+    "id": 4,
+    "name": "Mcdaniel",
+    "surname": "Lucas",
+    "age": 19,
+    "city": "Wright",
+    "parent_id": 2
+  },
+  {
+    "id": 5,
+    "name": "Houston",
+    "surname": "Maddox",
+    "age": 36,
+    "city": "Franklin",
+    "parent_id": 9
+  },
+  {
+    "id": 6,
+    "name": "Stark",
+    "surname": "Olsen",
+    "age": 49,
+    "city": "Ada",
+    "parent_id": 19
+  },
+  {
+    "id": 7,
+    "name": "Oconnor",
+    "surname": "Armstrong",
+    "age": 25,
+    "city": "Gulf",
+    "parent_id": 2
+  },
+  {
+    "id": 8,
+    "name": "Valdez",
+    "surname": "Contreras",
+    "age": 26,
+    "city": "Bentley",
+    "parent_id": 11
+  },
+  {
+    "id": 9,
+    "name": "Bailey",
+    "surname": "Johnston",
+    "age": 47,
+    "city": "Kempton",
+    "parent_id": 44
+  },
+  {
+    "id": 10,
+    "name": "Ida",
+    "surname": "Stevens",
+    "age": 19,
+    "city": "Cascades",
+    "parent_id": 45
+  },
+  {
+    "id": 11,
+    "name": "Piotr",
+    "surname": "Orr",
+    "age": 39,
+    "city": "Churchill",
+    "parent_id": 28
+  },
+  {
+    "id": 12,
+    "name": "Lidia",
+    "surname": "Gates",
+    "age": 44,
+    "city": "Gloucester",
+    "parent_id": 5
+  },
+  {
+    "id": 13,
+    "name": "Piotr",
+    "surname": "Kowalski",
+    "age": 38,
+    "city": "Beason",
+    "parent_id": 2
+  },
+  {
+    "id": 14,
+    "name": "Adam",
+    "surname": "Joyner",
+    "age": 22,
+    "city": "Wildwood",
+    "parent_id": 29
+  },
+  {
+    "id": 15,
+    "name": "Georgette",
+    "surname": "Henson",
+    "age": 17,
+    "city": "Sheatown",
+    "parent_id": 43
+  },
+  {
+    "id": 16,
+    "name": "Julia",
+    "surname": "Salazar",
+    "age": 17,
+    "city": "Disautel",
+    "parent_id": 47
+  },
+  {
+    "id": 17,
+    "name": "Lindsay",
+    "surname": "Matthews",
+    "age": 33,
+    "city": "Lodoga",
+    "parent_id": 3
+  },
+  {
+    "id": 18,
+    "name": "Natalie",
+    "surname": "Delaney",
+    "age": 24,
+    "city": "Roland",
+    "parent_id": 13
+  },
+  {
+    "id": 19,
+    "name": "Hammond",
+    "surname": "Benson",
+    "age": 47,
+    "city": "Duryea",
+    "parent_id": 7
+  },
+  {
+    "id": 20,
+    "name": "Abigail",
+    "surname": "Walton",
+    "age": 48,
+    "city": "Hillsboro",
+    "parent_id": 12
+  },
+  {
+    "id": 21,
+    "name": "Julia",
+    "surname": "Cobb",
+    "age": 38,
+    "city": "Witmer",
+    "parent_id": 0
+  },
+  {
+    "id": 22,
+    "name": "Julia",
+    "surname": "Moses",
+    "age": 44,
+    "city": "Dunbar",
+    "parent_id": 6
+  },
+  {
+    "id": 23,
+    "name": "Fran",
+    "surname": "Sweet",
+    "age": 23,
+    "city": "Grandview",
+    "parent_id": 0
+  },
+  {
+    "id": 24,
+    "name": "John",
+    "surname": "Horne",
+    "age": 44,
+    "city": "Fontanelle",
+    "parent_id": 24
+  },
+  {
+    "id": 25,
+    "name": "Sophia",
+    "surname": "Richards",
+    "age": 17,
+    "city": "Robinette",
+    "parent_id": 17
+  },
+  {
+    "id": 26,
+    "name": "Daniel",
+    "surname": "Hodge",
+    "age": 50,
+    "city": "Falconaire",
+    "parent_id": 17
+  },
+  {
+    "id": 27,
+    "name": "Jessie",
+    "surname": "Banks",
+    "age": 31,
+    "city": "Greenfields",
+    "parent_id": 46
+  },
+  {
+    "id": 28,
+    "name": "Christy",
+    "surname": "Padilla",
+    "age": 50,
+    "city": "Kohatk",
+    "parent_id": 19
+  },
+  {
+    "id": 29,
+    "name": "Kimberley",
+    "surname": "Wright",
+    "age": 36,
+    "city": "Shaft",
+    "parent_id": 19
+  },
+  {
+    "id": 30,
+    "name": "Margie",
+    "surname": "Bates",
+    "age": 43,
+    "city": "Templeton",
+    "parent_id": 17
+  },
+  {
+    "id": 31,
+    "name": "Fran",
+    "surname": "Cabrera",
+    "age": 27,
+    "city": "Carrsville",
+    "parent_id": 14
+  },
+  {
+    "id": 32,
+    "name": "Lizzie",
+    "surname": "Nielsen",
+    "age": 30,
+    "city": "Dixonville",
+    "parent_id": 26
+  },
+  {
+    "id": 33,
+    "name": "Daniel",
+    "surname": "Rojas",
+    "age": 34,
+    "city": "Grapeview",
+    "parent_id": 14
+  },
+  {
+    "id": 34,
+    "name": "Charles",
+    "surname": "Hill",
+    "age": 46,
+    "city": "Rivers",
+    "parent_id": 6
+  },
+  {
+    "id": 35,
+    "name": "Lou",
+    "surname": "Joyce",
+    "age": 25,
+    "city": "Coaldale",
+    "parent_id": 8
+  },
+  {
+    "id": 36,
+    "name": "Abigail",
+    "surname": "Daniels",
+    "age": 29,
+    "city": "Gardners",
+    "parent_id": 23
+  },
+  {
+    "id": 37,
+    "name": "John",
+    "surname": "Fernandez",
+    "age": 35,
+    "city": "Malo",
+    "parent_id": 4
+  },
+  {
+    "id": 38,
+    "name": "John",
+    "surname": "Mccarty",
+    "age": 24,
+    "city": "Kula",
+    "parent_id": 42
+  },
+  {
+    "id": 39,
+    "name": "Courtney",
+    "surname": "Graves",
+    "age": 22,
+    "city": "Soham",
+    "parent_id": 29
+  },
+  {
+    "id": 40,
+    "name": "Lou",
+    "surname": "Holt",
+    "age": 34,
+    "city": "Whitmer",
+    "parent_id": 21
+  },
+  {
+    "id": 41,
+    "name": "Olivia",
+    "surname": "Bennett",
+    "age": 41,
+    "city": "Boomer",
+    "parent_id": 9
+  },
+  {
+    "id": 42,
+    "name": "Olivia",
+    "surname": "Gray",
+    "age": 16,
+    "city": "Vincent",
+    "parent_id": 6
+  },
+  {
+    "id": 43,
+    "name": "Abbott",
+    "surname": "Bender",
+    "age": 42,
+    "city": "Richmond",
+    "parent_id": 11
+  },
+  {
+    "id": 44,
+    "name": "Everett",
+    "surname": "Cantu",
+    "age": 38,
+    "city": "Cornfields",
+    "parent_id": 26
+  },
+  {
+    "id": 45,
+    "name": "Adrienne",
+    "surname": "Parks",
+    "age": 26,
+    "city": "Crown",
+    "parent_id": 11
+  },
+  {
+    "id": 46,
+    "name": "Julia",
+    "surname": "Fowler",
+    "age": 49,
+    "city": "Gila",
+    "parent_id": 22
+  },
+  {
+    "id": 47,
+    "name": "Dena",
+    "surname": "Gilliam",
+    "age": 23,
+    "city": "Cazadero",
+    "parent_id": 40
+  },
+  {
+    "id": 48,
+    "name": "Claudia",
+    "surname": "Richmond",
+    "age": 26,
+    "city": "Bluffview",
+    "parent_id": 41
+  },
+  {
+    "id": 49,
+    "name": "Julia",
+    "surname": "Crawford",
+    "age": 48,
+    "city": "Orick",
+    "parent_id": 9
+  },
+  {
+    "id": 50,
+    "name": "Adam",
+    "surname": "Coffey",
+    "age": 38,
+    "city": "Evergreen",
+    "parent_id": 48
+  }
+]
