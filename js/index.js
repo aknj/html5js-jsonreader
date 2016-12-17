@@ -18,11 +18,17 @@ document.addEventListener("DOMContentLoaded", function(event) {
     }
   };
 
-  var cos = function(json) {
+  var displayTableElem = function(json) {
     var tableElem = buildHtmlTable(json);
     resultsSection.firstChild ?
       resultsSection.firstChild.replaceWith(tableElem) :
       resultsSection.appendChild(tableElem);
+  }
+
+  var displayValue = value => {
+    var pElem = document.createElement('p');
+    pElem.append(document.createTextNode(value));
+    resultsSection.appendChild(pElem);
   }
 
   /**
@@ -45,12 +51,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
         if (mode === "2") {
           for (var i = 0; i < 10; i++) { results.push(data[i]); }
-          cos(results);
+          displayTableElem(results);
 
         } else if (mode === "3") {
-          var _p = document.createElement('p');
-          _p.append(document.createTextNode(data.length));
-          resultsSection.appendChild(_p);
+          displayValue(data.length);
+
         } else if (mode === "4") {
           var minId = document.getElementById('minId').value;
           for (item of data) {
@@ -59,8 +64,21 @@ document.addEventListener("DOMContentLoaded", function(event) {
             }
             results.sort(function(a, b) { return a.id - b.id });
           }
+          displayTableElem(results);
 
-          cos(results);
+        } else if (mode === "6") {
+          var names = [];
+          for (obj of data) {
+            names.push(obj.name);
+          }
+          var results = [...new Set(names)].map(function(x) {
+            var obj = {};
+            obj['name'] = x;
+            obj['number of occurences'] = names.filter(y => y === x).length;
+            return obj;
+          });
+          displayTableElem(results);
+          
         }
       });
     });
