@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
           displayValue(data.length);
 
         } else if (mode === "4") {
-          var minId = document.getElementById('minId').value;
+          var minId = document.getElementsByName('minId')[0].value;
           for (item of data) {
             if (item.id > minId) {
               results.push(item);
@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
             return obj;
           });
           displayTableElem(results);
-          
+
         }
       });
     });
