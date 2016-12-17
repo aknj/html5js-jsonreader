@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
           var results = [...new Set(names)].map(function(x) {
             var obj = {};
             obj['name'] = x;
-            obj['number of occurences'] = names.filter(y => y === x).length;
+            obj['number of occurrences'] = names.filter(y => y === x).length;
             return obj;
           });
           displayTableElem(results);
