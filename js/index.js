@@ -18,12 +18,18 @@ document.addEventListener("DOMContentLoaded", function(event) {
     }
   };
 
+  var cos = function(json) {
+    var tableElem = buildHtmlTable(json);
+    resultsSection.firstChild ?
+      resultsSection.firstChild.replaceWith(tableElem) :
+      resultsSection.appendChild(tableElem);
+  }
+
   /**
    * change event on the fileInput element
    */
   fileInput.addEventListener('change', e => {
     clear();
-    console.log(resultsSection.hasChildNodes());
     var uploadedFile = fileInput.files[0];
     readFile(uploadedFile, function(dataAsText) {
       fileDisplayArea.value = dataAsText;
@@ -33,17 +39,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
       submitButton.addEventListener('click', e => {
         var mode = document.querySelector('input[name=mode]:checked').value;
         clear();
-        console.log('click');
 
         var data = JSON.parse(dataAsText);
         var results = [];
 
         if (mode === "2") {
           for (var i = 0; i < 10; i++) { results.push(data[i]); }
-          var tableElem = buildHtmlTable(results);
-          resultsSection.firstChild ?
-            resultsSection.firstChild.replaceWith(tableElem) :
-            resultsSection.appendChild(tableElem);
+          cos(results);
 
         } else if (mode === "3") {
           var _p = document.createElement('p');
@@ -56,14 +58,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
               results.push(item);
             }
             results.sort(function(a, b) { return a.id - b.id });
-            console.log(item);
           }
 
-          /* TO DO: take this out */
-          var tableElem = buildHtmlTable(results);
-          resultsSection.firstChild ?
-            resultsSection.firstChild.replaceWith(tableElem) :
-            resultsSection.appendChild(tableElem);
+          cos(results);
         }
       });
     });

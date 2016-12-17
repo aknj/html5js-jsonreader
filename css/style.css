@@ -70,7 +70,7 @@ fieldset > p {
 }
 
 fieldset input[type=number] {
-  width: 2.5em;
+  width: 3.5em;
   text-align: right;
 }
 
@@ -153,12 +153,16 @@ tr:last-child {
   border-bottom: none;
 }
 
+tr:hover td {
+  background: #dedede;
+}
+
 tr:nth-child(odd) td {
   background: #EBEBEB;
 }
 
 tr:nth-child(odd):hover td {
-  background: #636363;
+  background: #dedede;
 }
 
 tr:last-child td:first-child {
