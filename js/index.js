@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
 
   function displayValue(value) {
     let pElem = document.createElement('p');
-    pElem.append(document.createTextNode(value));
+    pElem.appendChild(document.createTextNode(value));
     resultsSection.appendChild(pElem);
   }
 
@@ -79,6 +79,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
             obj['number of occurrences'] = names.filter(y => y === x).length;
             return obj;
           });
+          results = results.filter(item => item['number of occurrences'] > 1);
           results.sort( (b, a) =>
             a['number of occurrences'] - b['number of occurrences'] );
           displayTableElem(results);

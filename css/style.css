@@ -11,8 +11,22 @@ p {
   font-size: 0.8em;
 }
 
+fieldset > p {
+  vertical-align: sub;
+  line-height: 1.5em;
+}
+fieldset > p:after {
+  content: "";
+  clear: both;
+}
+input[type=radio] {
+  float: left;
+}
 label.mode {
   font-size: 0.9em;
+  margin-left: 5px;
+  max-width: 95%;
+  display: inline-block;
 }
 
 #content-wrapper {

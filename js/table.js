@@ -11,10 +11,10 @@ function buildHtmlTable(arr) {
     let tr = _tr_.cloneNode(false);
     for (let j = 0, maxj = columns.length; j < maxj; ++j) {
       let td = _td_.cloneNode(false);
-      td.append(document.createTextNode(arr[i][columns[j]] || 0));
-      tr.append(td);
+      td.appendChild(document.createTextNode(arr[i][columns[j]] || 0));
+      tr.appendChild(td);
     }
-    table.append(tr);
+    table.appendChild(tr);
   }
   return table;
 }
@@ -28,10 +28,10 @@ function addAllColumnHeaders(arr, table) {
         columnSet.push(key);
         let th = _th_.cloneNode(false);
         th.appendChild(document.createTextNode(key));
-        tr.append(th);
+        tr.appendChild(th);
       }
     }
   }
-  table.append(tr);
+  table.appendChild(tr);
   return columnSet;
 }
