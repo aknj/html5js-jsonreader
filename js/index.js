@@ -79,7 +79,9 @@ document.addEventListener('DOMContentLoaded', function(event) {
             obj['number of occurrences'] = names.filter(y => y === x).length;
             return obj;
           });
-          results = results.filter(item => item['number of occurrences'] > 1);
+          const minNumberOfOccurrences = 1;
+          results = results.filter( item =>
+            item['number of occurrences'] > minNumberOfOccurrences );
           results.sort( (b, a) =>
             a['number of occurrences'] - b['number of occurrences'] );
           displayTableElem(results);
